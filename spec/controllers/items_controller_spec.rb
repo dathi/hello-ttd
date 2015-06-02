@@ -55,8 +55,17 @@ RSpec.describe ItemsController, type: :controller do
 	end
 
 	describe "POST remove_done" do
+		before do
+			allow(Item).to receive :remove_done
+		end
+
 		def do_remove_done
 			post :remove_done
+		end
+
+		it "removes done items" do
+			do_remove_done
+			expect(Item).to have_received(:remove_done)
 		end
 
 		it "redirect to the index" do
