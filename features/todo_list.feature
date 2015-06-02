@@ -13,3 +13,10 @@ Feature: to-do list
 		Given I have some items in my to-do list
 		When I click on an item
 		Then It is marked as done
+
+	@wip
+	Scenario: Remove done items
+		Given I have some items in my to-do list
+		And some of the items are done
+		When I remove done item
+		Then only the to-do items are left behind
