@@ -5,6 +5,10 @@ module TodoListStepHelper
 		fill_in "New item:", with: name
 		click_on "Add"
 	end
+
+	def click_item item
+		click_on item.name
+	end
 end
 World TodoListStepHelper
 
