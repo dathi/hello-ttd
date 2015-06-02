@@ -30,15 +30,15 @@ ul {
       border-top: none;
     }
 
-	a {
-	  &:link, &:visited, &:active {
-	    text-decoration: none;
-	    color: black;
-	  }
+    a {
+      &:link, &:visited, &:active {
+        text-decoration: none;
+        color: black;
+      }
 
-	  &:hover {
-	    text-decoration: line-through;
-	  }
-	}
+      &:hover {
+        text-decoration: line-through;
+      }
+    }
   }
 }
