@@ -18,5 +18,5 @@ Feature: to-do list
 	Scenario: Remove done items
 		Given I have some items in my to-do list
 		And some of the items are done
-		When I remove done item
+		When I remove done items
 		Then only the to-do items are left behind
