@@ -53,4 +53,14 @@ RSpec.describe ItemsController, type: :controller do
 			expect(response).to redirect_to action: :index
 		end
 	end
+
+	describe "POST remove_done" do
+		def do_remove_done
+		end
+
+		it "redirect to the index" do
+			do_remove_done
+			expect(response).to redirect_to action: :index
+		end
+	end
 end
