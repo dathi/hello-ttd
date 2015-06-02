@@ -1,3 +1,5 @@
+Source: http://www.kerrybuckley.org/2015/03/27/tdd-example-with-rails-cucumber-and-rspec/
+
 # Sample "to-do" Rails app
 
 Created for a demo of TDD with [http://rubyonrails.org/](Rails), using
