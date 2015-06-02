@@ -56,6 +56,7 @@ RSpec.describe ItemsController, type: :controller do
 
 	describe "POST remove_done" do
 		def do_remove_done
+			post :remove_done
 		end
 
 		it "redirect to the index" do
