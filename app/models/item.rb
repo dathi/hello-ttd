@@ -6,4 +6,7 @@ class Item < ActiveRecord::Base
 	def to_partial_path
 		done? ? "done_item" : "to_do_item"
 	end
+
+	def self.remove_done
+	end
 end
