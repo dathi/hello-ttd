@@ -25,7 +25,7 @@ RSpec.describe Item, type: :model do
   		Item.create name: "To-do item"
   		Item.create name: "Done item", done: true
   		Item.remove_done
-  		expect(Item.all.map(&:name)).to eq ["To_do_item"]
+  		expect(Item.all.map(&:name)).to eq ["To-do item"]
   	end
   end
 end
