@@ -19,13 +19,17 @@ RSpec.describe ItemsController, type: :controller do
 			allow(Item).to receive :create
 		end
 
-		it "creates a new item" do
+		def do_create
 			post :create, item: {name: "do it!"}
+		end
+
+		it "creates a new item" do
+			do_create
 			expect(Item).to have_received(:create).with name: "do it!"
 		end
 
 		it "redirect to the index" do
-			post :create
+			do_create
 			expect(response).to redirect_to action: :index
 		end
 	end
