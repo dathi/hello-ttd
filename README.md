@@ -20,6 +20,15 @@ See full commit messages for step-by-step description. Where files were changed
 by running a command rather than manually, that step will be a separate commit,
 with the command(s) listed in the commit message.
 
+To check out a specific version of the code:
+
+    git log
+
+Find the SHA of the commit you want to check out, then:
+
+    git checkout <SHA>
+    rake db:reset
+
 The steps in the history are more-or-less as I actually did them, but a glance
 at the commit dates will make it obvious that I've gone back and rebased a
 couple of things where I missed something out or changed my mind, in order to
