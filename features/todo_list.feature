@@ -8,3 +8,9 @@ Feature: to-do list
 	Scenario: Add an item to my to-do list
 		When I add a to-do item
 		Then It appear in my to-do list
+
+	@wip
+	Scenario: Mark an item as done
+		Given I have some items in my to-do list
+		When I click on an item
+		Then It is marked as done
